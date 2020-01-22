@@ -1,4 +1,4 @@
-# This is a sample application written in Angular 7 in .Net Core. 
+# This is a sample application written in Angular 7 and .Net Core. 
 
 Client side is covered by 27 Tests, and server side by 13 Integration Tests
 Policy Edit Form has implemented async validation on Policy # uniqueness
