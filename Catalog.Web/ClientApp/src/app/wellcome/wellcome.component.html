@@ -1,0 +1,37 @@
+<h1>Wellcome</h1>
+This is a test application written in Angular in .Net Core. Client side is covered by 27 Tests, and server side by 13 Integration Tests
+
+<div>Policy Edit Form has implemented async validation on Policy # uniqueness </div>
+<div>Solution has 3 projects:</div>
+
+<pre>
+
+WTW.Web &lt;-PolicyController
+WTW.Lib &lt;-PolicyRepository
+WTW.Specification.Tests &lt;- Integration Tests for PolicyController
+</pre>
+
+<div>Client side has following stucture:</div>
+<pre>
+
+app
+---\_services
+-------------\policy.service.ts  &lt;-main service class that operates with server side
+-------------\policy.service.spec.ts &lt;- 7 tests
+---\header
+---\pipes
+---------\gender.pipe.ts &lt;- used to transform [0,1] to Mail, Female strings
+---------\gender.pipe.spec.ts &lt;- 2 tests
+----\policy-form
+----------------\policy-form.component.css
+----------------\policy-form.component.html
+----------------\policy-form.component.spec.ts &lt;- 7 tests
+----------------\policy-form.component.ts &lt;- form that renders policy edit/create 
+----\policy-list
+                \policy-list.component.css
+----------------\policy-list.component.html
+----------------\policy-list.component.spec.ts &lt;- 7 tests
+----------------\policy-list.component.ts &lt;-list of policies
+---\app.config.ts &lt;-some configuration related to policy service
+---\app.routes.ts
+</pre>

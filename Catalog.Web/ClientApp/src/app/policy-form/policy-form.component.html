@@ -1,0 +1,84 @@
+<h2 *ngIf="policy!=null" i18n="Edit policy|Title">Edit policy</h2>
+<h2 *ngIf="policy==null" i18n="Create policy|Title">Create new policy</h2>
+<div class="col-md-8">
+  <form [formGroup]="policyForm" (ngSubmit)="onSubmitForm()">
+    <div>
+      <div>
+        <label for="" i18n="Policy Id| Label@@policy-id-lbl">Policy #</label>
+        <input type="text" class="form-control" formControlName="policyNumber" readonly="{{policy==null?'':'readonly'}}"
+               [ngClass]="{'is-invalid':(policyNumber.invalid && (policyNumber.dirty || policyNumber.touched))}">
+        <div class="invalid-feedback" *ngIf="policyNumber.invalid && policyNumber.errors.policyNumberTaken">
+          *Policy # is already in use
+        </div>
+        <div class="invalid-feedback" *ngIf="policyNumber.invalid && policyNumber.errors.required">
+          *Policy # is required
+        </div>
+        <div class="invalid-feedback" *ngIf="policyNumber.invalid && policyNumber.errors.pattern">
+          *Only numbers
+        </div>
+      </div>
+      <div>
+        <div>
+          <label for="" i18n="Name| Label@@policy-name-lbl">Name</label>
+          <input type="text" class="form-control" placeholder="" formControlName="name"
+                 [ngClass]="{'is-invalid':(name.invalid && (name.dirty || name.touched))}" />
+          <div class="invalid-feedback">
+            *Valid  name is required.
+          </div>
+        </div>
+        <div>
+          <label for="" i18n="Age| Label@@policy-age-lbl">Age</label>
+          <input type="text" class="form-control" placeholder="" formControlName="age"
+                 [ngClass]="{'is-invalid':(age.invalid && (age.dirty || age.touched))}" />
+
+          <div class="invalid-feedback" *ngIf="age.invalid && age.errors.required">
+            *Age is required
+          </div>
+          <div class="invalid-feedback" *ngIf="age.invalid && age.errors.min">
+            *Min is {{age.errors.min.min}}
+          </div>
+          <div class="invalid-feedback" *ngIf="age.invalid && age.errors.max">
+            *Max is {{age.errors.max.max}}
+          </div>
+          <div class="invalid-feedback" *ngIf="age.invalid && age.errors.pattern">
+            *Only numbers
+          </div>
+
+        </div>
+        <div>
+          <label for="lastName" i18n="Sex| Label@@policy-sex-lbl">Gender</label>
+          <select class="form-control" formControlName="gender"
+                  [ngClass]="{'is-invalid':(gender.invalid && (gender.dirty || gender.touched))}">
+            <option *ngFor="let g of genders" value="{{g.value}}">
+              {{g.value|gender}}
+            </option>
+          </select>
+          <div class="invalid-feedback">
+            Gender is required.
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <br />
+    <div class="row">
+      <div class="col-8">
+        <button [routerLink]="['/list']" type="button" class="btn btn-secondary"
+                i18n="Form cancel button|caption@@form-cancel-button">
+          Back
+        </button>
+        &nbsp;
+        <button type="submit" [disabled]="policyForm.valid == false || !policyForm.dirty"
+                class="btn btn-primary"
+                i18n="Form save button|caption@@form-save-button">
+          Save
+        </button>
+
+        <span *ngIf="success" i18n="Operation successfull| Label@@form-submit-complete">&nbsp;Operation successfull</span>
+      </div>
+
+    </div>
+  </form>
+</div>
+<br />
+

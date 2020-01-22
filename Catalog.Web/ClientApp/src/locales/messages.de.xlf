@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="532152365f64d8738343423767f1130c1a451e78" datatype="html">
+        <source>Catalog</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/policy-list/policy-list.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+        <note priority="1" from="description">Catalog:Title</note>
+      </trans-unit>
+      <trans-unit id="policy-id-lbl" datatype="html">
+        <source>Policy #</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/policy-list/policy-list.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/policy-form/policy-form.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <note priority="1" from="description"> Label</note>
+        <note priority="1" from="meaning">Policy Id</note>
+      </trans-unit>
+      <trans-unit id="policy-name-lbl" datatype="html">
+        <source>Name</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/policy-list/policy-list.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/policy-form/policy-form.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+        <note priority="1" from="description"> Label</note>
+        <note priority="1" from="meaning">Name</note>
+      </trans-unit>
+      <trans-unit id="policy-age-lbl" datatype="html">
+        <source>Age</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/policy-list/policy-list.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/policy-form/policy-form.component.html</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+        <note priority="1" from="description"> Label</note>
+        <note priority="1" from="meaning">Age</note>
+      </trans-unit>
+      <trans-unit id="policy-sex-lbl" datatype="html">
+        <source>Sex</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/policy-list/policy-list.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/policy-form/policy-form.component.html</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+        <note priority="1" from="description"> Label</note>
+        <note priority="1" from="meaning">Sex</note>
+      </trans-unit>
+      <trans-unit id="de5cb1f91511fa82154d47def8a92a3c3067f9ce" datatype="html">
+        <source>Edit policy</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/policy-form/policy-form.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">Title</note>
+        <note priority="1" from="meaning">Edit policy</note>
+      </trans-unit>
+      <trans-unit id="9be166a8bc53047bdb351d081e6a155f54612544" datatype="html">
+        <source>Create new policy</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/policy-form/policy-form.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+        <note priority="1" from="description">Title</note>
+        <note priority="1" from="meaning">Create policy</note>
+      </trans-unit>
+      <trans-unit id="form-cancel-button" datatype="html">
+        <source>
+          Back
+        </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/policy-form/policy-form.component.html</context>
+          <context context-type="linenumber">69</context>
+        </context-group>
+        <note priority="1" from="description">caption</note>
+        <note priority="1" from="meaning">Form cancel button</note>
+      </trans-unit>
+      <trans-unit id="form-save-button" datatype="html">
+        <source>
+          Save
+        </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/policy-form/policy-form.component.html</context>
+          <context context-type="linenumber">75</context>
+        </context-group>
+        <note priority="1" from="description">caption</note>
+        <note priority="1" from="meaning">Form save button</note>
+      </trans-unit>
+      <trans-unit id="form-submit-complete" datatype="html">
+        <source> Operation successfull</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/policy-form/policy-form.component.html</context>
+          <context context-type="linenumber">79</context>
+        </context-group>
+        <note priority="1" from="description"> Label</note>
+        <note priority="1" from="meaning">Operation successfull</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
